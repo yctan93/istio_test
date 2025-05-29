@@ -1,14 +1,3 @@
-apiVersion: source.toolkit.fluxcd.io/v1
-kind: GitRepository
-metadata:
-  name: my-repo
-  namespace: flux-system
-spec:
-  interval: 1m
-  url: https://github.com/yctan93/istio_test
-  ref:
-    branch: main
----
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:

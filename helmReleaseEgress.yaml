@@ -1,0 +1,14 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: istio-egressgateway
+  namespace: istio-system
+spec:
+  interval: 5m
+  chart:
+    spec:
+      chart: ./charts/gateway_egress 
+      sourceRef:
+        kind: GitRepository
+        name: my-repo
+        namespace: flux-system
