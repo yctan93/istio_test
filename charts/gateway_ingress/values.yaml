@@ -9,7 +9,7 @@ _internal_defaults_do_not_set:
   # Controls the spec.replicas setting for the Gateway deployment if set.
   # Otherwise defaults to Kubernetes Deployment default (1).
   replicaCount:
-  image: istio/proxyv2:1.25.3 #Update here
+  image: "" #istio/proxyv2:1.25.3 #Update here
 
   kind: Deployment
 

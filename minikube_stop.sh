@@ -15,7 +15,7 @@ kubectl delete -f helmReleaseIstiod.yaml
 kubectl delete -f helmReleaseBase.yaml
 kubectl delete -f gitRepo.yaml
 kubectl delete crd $(kubectl get CustomResourceDefinition -A | grep "istio.io" | awk '{print $1}')
-kubectl delete namespace istio-system
+# kubectl delete namespace istio-system
 # kubectl delete -f test.yaml
 # minikube stop
 

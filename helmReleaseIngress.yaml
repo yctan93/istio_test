@@ -12,3 +12,7 @@ spec:
         kind: GitRepository
         name: my-repo
         namespace: flux-system
+  values:
+    # service:
+    #   loadBalancerIP: 127.0.0.1
+    image: istio/proxyv2:1.25.2

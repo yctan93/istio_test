@@ -6,7 +6,7 @@
 
 # kubectl apply -f test.yaml
 
-minikube start --kubernetes-version=v1.30.5
+# minikube start --kubernetes-version=v1.30.5
 
 kubectl create namespace istio-system
 minikube image load istio/pilot:1.25.3
